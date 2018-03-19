@@ -1,0 +1,47 @@
+.navbar {
+  background: $whiteL;
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    li {
+      font-size: 16px;
+      &#menu-expand {
+        a {
+          color: $darkD;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          height: 100%;
+          text-align: center;
+        }
+      }
+      &.page-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-weight: $regular;
+        text-transform: uppercase;
+        width: 100%;
+        color: $darkD;
+      }
+      &.brand {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          height: 100%;
+          text-align: center;
+          img {
+            width: 35px;
+          }
+        }
+      }
+    }
+  }
+}
